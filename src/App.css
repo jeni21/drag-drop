@@ -2,37 +2,75 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.popup-middle-div{
+  height: 150px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-wrap {
+  width: 90%;
+  margin: auto;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ok-btn{
+  padding: 10px 31px;
+  background: #4CAF50;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cancel-btn{
+  padding: 10px 17px;
+  background: #f34949;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.drop-image{
+  border: 5px solid #f34949;
+  width: 180px;
+  height: 180px;
+  position: relative;
+}
+
+.btn-wrap{
   display: flex;
-  flex-direction: column;
+  margin: 15px 0px 15px 0px;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.image-style {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.confirm-msg {
+  font-size: 19px;
+  background: #e8e8e8;
+  margin: 0;
+  line-height: 36px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.popup-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: #000000a3;
+  z-index: 1;
 }
